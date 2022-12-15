@@ -1,19 +1,27 @@
-plugins {
+plugins{
     id 'java'
 }
 
-group 'automation'
-version '1.0-SNAPSHOT'
-
 repositories {
-    mavenCentral()
+    maven{
+        url 'https://repo.maven.apache.org/maven2'
+    }
 }
 
-dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+dependencies{
+    testImplementation 'com.intuit.karate:karate-junit5:1.2.0.RC5'
+    testImplementation 'net.masterthought:cucumber-reporting:5.7.0'
 }
-
-test {
+test{
     useJUnitPlatform()
+    systemProperty "karate.env", System.properties.getProperty("karate.env")
+}
+
+sourceSets{
+    test{
+        resources{
+            srcDir file('src/test/java')
+            exclude '**/*.java'
+        }
+    }
 }
