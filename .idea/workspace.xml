@@ -4,19 +4,636 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e057e4db-f12d-4c11-bd2c-c334cb64c938" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/users/patch/user-patch.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/users/post/registersuccessful-post.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/users/post/registerunsuccessful-post.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="e057e4db-f12d-4c11-bd2c-c334cb64c938" name="Changes" comment="Se agregaron los test para registro exitoso y registro no exitoso.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/users/post/loginsuccessful-push.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/users/post/loginunsuccessful-push.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054538916/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054595715/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671054766328/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055027113/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055200316/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055264168/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055408025/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055459395/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055577888/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055806826/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055874261/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671055895929/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056673028/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671056690054/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057428724/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/src.test.java.users.post.user-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671057715500/src.test.java.users.post.user-post.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/src.test.java.users.post.user-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058192433/src.test.java.users.post.user-post.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671058998768/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059028494/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059047148/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059105221/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059120824/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059136929/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059234655/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/src.test.java.users.get.user-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671059393014/src.test.java.users.get.user-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/src.test.java.users.get.resource-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066180264/src.test.java.users.get.resource-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/src.test.java.users.patch.user-patch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066212314/src.test.java.users.patch.user-patch.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/src.test.java.users.patch.user-patch.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066236510/src.test.java.users.patch.user-patch.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/src.test.java.users.put.user-put.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066250593/src.test.java.users.put.user-put.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/src.test.java.users.delete.user-delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066296961/src.test.java.users.delete.user-delete.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/src.test.java.users.get.resource-get.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066684808/src.test.java.users.get.resource-get.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/src.test.java.users.post.registersuccessful-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066699298/src.test.java.users.post.registersuccessful-post.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/src.test.java.users.post.registersuccessful-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066848432/src.test.java.users.post.registersuccessful-post.karate-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-progress-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-summary-json.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-tags.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/karate-timeline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/jquery.tablesorter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/karate-report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/karate-report.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/vis.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/res/vis.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/src.test.java.users.post.registerunsuccessful-post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/karate-reports_1671066863969/src.test.java.users.post.registerunsuccessful-post.karate-json.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/automation/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/automation/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/users/delete/user-delete.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/delete/user-delete.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/users/get/resource-get.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/get/resource-get.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/users/get/user-get.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/get/user-get.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/users/post/user-post.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/post/user-post.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/users/put/user-put.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/users/put/user-put.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +673,45 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Cucumber Java.Feature: registerunsuccessful-post">
+  <component name="RunManager" selected="Cucumber Java.Feature: registersuccessful-post">
+    <configuration name="Feature: loginsuccessful-push" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/users/post/loginsuccessful-push.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="automationproyect.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: loginsuccessful-push" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: loginunsuccessful-push" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/users/post/loginunsuccessful-push.feature" />
+      <option name="GLUE" value="com.intuit.karate" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="automationproyect.test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
+      <option name="SUGGESTED_NAME" value="Feature: loginunsuccessful-push" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Feature: registersuccessful-post" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/users/post/registersuccessful-post.feature" />
@@ -114,51 +769,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: user-delete" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/users/delete/user-delete.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="automationproyect.test" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: user-delete" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Feature: user-put" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/users/put/user-put.feature" />
-      <option name="GLUE" value="com.intuit.karate" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="automationproyect.test" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome" />
-      <option name="SUGGESTED_NAME" value="Feature: user-put" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: registerunsuccessful-post" />
         <item itemvalue="Cucumber Java.Feature: registersuccessful-post" />
+        <item itemvalue="Cucumber Java.Feature: loginsuccessful-push" />
+        <item itemvalue="Cucumber Java.Feature: loginunsuccessful-push" />
+        <item itemvalue="Cucumber Java.Feature: registerunsuccessful-post" />
         <item itemvalue="Cucumber Java.Feature: resource-get" />
-        <item itemvalue="Cucumber Java.Feature: user-delete" />
-        <item itemvalue="Cucumber Java.Feature: user-put" />
       </list>
     </recent_temporary>
   </component>
@@ -171,11 +788,34 @@
       <option name="presentableId" value="Default" />
       <updated>1671054323227</updated>
       <workItem from="1671054324407" duration="1159000" />
-      <workItem from="1671055530866" duration="6166000" />
+      <workItem from="1671055530866" duration="6668000" />
     </task>
+    <task id="LOCAL-00001" summary="Se agregaron los test para registro exitoso y registro no exitoso.">
+      <created>1671067040291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671067040291</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se agregaron los test para registro exitoso y registro no exitoso." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregaron los test para registro exitoso y registro no exitoso." />
   </component>
 </project>
